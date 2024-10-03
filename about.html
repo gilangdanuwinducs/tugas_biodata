@@ -4,39 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    table, th, td {
-        border: 1px solid white;
-        border-collapse: collapse;
-    }
-    th, td {
-        background-color: #aaaaaa;
-    }
-    .center { 
-        margin-left: 39%;
-    }
-</style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        table {
+            border: 1px solid white;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            background-color: #aaaaaa;
+            padding: 10px;
+        }
+        img {
+            border-radius: 20%;
+            max-width: 100%;
+            height: auto;
+        }
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+        @media (max-width: 600px) {
+            .center {
+                margin-left: 0;
+                width: 90%;
+            }
+            table {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- header -->
-    <div style="text-align: center;">
-        <h1>About Me</h1>
-    </div>
+    <h1>About Me</h1>
     <!-- end header -->
 
     <!-- Photo Profiles -->
-    <div style="text-align: center;">
-        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDZsY3hwbHNiaTRkcjhibGZ4b3oxbHl3M2lvYTV5MGhsZm01bjkyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/87NS05bya11mg/200.webp" alt="Profile Picture" style="width: 200px; height: 200px; border-radius: 20%;">
-    </div>
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDZsY3hwbHNiaTRkcjhibGZ4b3oxbHl3M2lvYTV5MGhsZm01bjkyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/87NS05bya11mg/200.webp" alt="Profile Picture" style="width: 200px; height: 200px;">
     <!-- end Photo Profiles -->
 
     <!-- Opening -->
-    <div style="text-align: center;"></div>
-        <p style="padding-left: 10%; padding-right: 10%;">
-            Hai, Nama Saya Gilang Danuwindu Jihantoro. saya adalah seorang web developer dimana saya bekerja sebagai tenaga pendidik
-            di sebuah sekolah menengah kejuruan di kota Bandung
-        </p>
-    </div>
+    <p style="padding: 0 10%; text-align: center;">
+        Hai, Nama Saya Gilang Danuwindu Jihantoro. Saya adalah seorang web developer dimana saya bekerja sebagai tenaga pendidik
+        di sebuah sekolah menengah kejuruan di kota Bandung.
+    </p>
     <!-- end Opening -->
 
     <!-- Table Biodata -->
@@ -82,15 +104,18 @@
     <!-- end Table Biodata -->
 
     <!-- footer -->
-    <div style="text-align: center;">
-        <a href="https://www.instagram.com/gilangjihanto/" target="_blank"></a>
-            <img src="images/instagram_icon.png" alt="Instagram Icon" style="width: 50px; height: 50px;">
+    <div class="social-icons">
+        <a href="https://www.instagram.com/gilang_danuwindu/" target="_blank">
+            <img src="images/logo_instagram.png" alt="Instagram Icon">
         </a>
-        <a href="https://www.facebook.com/gilang.jihanto.9" target="_blank">
-            <img src="images/facebook_icon.png" alt="Facebook Icon" style="width: 50px; height: 50px;">
+        <a href="https://www.facebook.com/gilang_danuwindu" target="_blank">
+            <img src="images/logo_facebook.png" alt="Facebook Icon">
         </a>
-        <a href="https://www.linkedin.com/in/gilang-jihanto-31b4b21a5/" target="_blank">
-            <img src="images/linkedin_icon.png" alt="whatsapp" style="width: 50px; height: 50px;">
+        <a href="https://github.com/gilangdanuwinducs" target="_blank"></a>
+            <img src="images/logo_github.png" alt="Facebook Icon">
+        </a>
+        <a href="https://wa.me/62-chat-dulu/" target="_blank">
+            <img src="images/logo_whatsapp.png" alt="LinkedIn Icon">
         </a>
     </div>
     <!-- end footer -->
